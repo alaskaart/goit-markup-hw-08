@@ -72,7 +72,11 @@
     margin-bottom: 32px;
 }
 
-.mobile-link:active {
+.link .current {
+    color: var(--accent-color);
+    }
+
+.mobile-link .link:hover {
     color: var(--accent-color);
 }
 
