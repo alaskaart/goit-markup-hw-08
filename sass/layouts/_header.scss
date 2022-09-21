@@ -1,0 +1,10 @@
+// header
+
+.header {
+    border-bottom: 1px solid var(--header);
+    padding: 10px 0;
+
+    @media screen and (max-width: 767px) {
+        padding: 10px 0;
+    }
+}

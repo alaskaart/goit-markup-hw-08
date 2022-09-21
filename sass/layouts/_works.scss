@@ -1,0 +1,52 @@
+// /* describe */
+
+.describes {
+    @include section (0, 94px);
+
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.describe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+    // margin-right: 30px;
+    gap: 30px;
+    display: inline-block;
+    }
+
+
+    &__thumb {
+    position: relative;
+    }
+
+    &__text {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    height: 70px;
+    }
+}
+
+.describe__item:last-child {
+    margin-right: 0;
+}
